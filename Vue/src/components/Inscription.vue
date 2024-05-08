@@ -6,6 +6,15 @@
     </header>
     <form @submit.prevent="submitForm">
       <div>
+        <label for="name">NOM Prénom :</label>
+        <input
+          id="name"
+          type="text"
+          v-model="formData.email"
+          placeholder="NOM Prénom"
+        />
+      </div>
+      <div>
         <label for="email">Email :</label>
         <input
           id="email"
@@ -21,15 +30,6 @@
           type="text"
           v-model="formData.email"
           placeholder="Username"
-        />
-      </div>
-      <div>
-        <label for="name">NOM Prénom :</label>
-        <input
-          id="name"
-          type="text"
-          v-model="formData.email"
-          placeholder="NOM Prénom"
         />
       </div>
       <div>

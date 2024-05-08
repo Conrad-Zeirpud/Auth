@@ -1,6 +1,8 @@
 <script setup>
-import Loggin from "@/components/Loggin.vue";
+import Connexion from "@/components/Connexion.vue";
 import Inscription from "@/components/Inscription.vue";
+
+
 </script>
 
 <template>
@@ -12,7 +14,7 @@ import Inscription from "@/components/Inscription.vue";
     <body>
       <Inscription />
       <div id="bar-vertical"</div>  
-      <Loggin />
+      <Connexion />
     </body>
   </main>
 </template>

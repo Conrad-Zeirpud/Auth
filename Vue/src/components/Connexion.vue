@@ -31,6 +31,9 @@
 
 <script setup>
 import { ref } from "vue";
+import { useProfilStore } from "@/stores/ProfilStore"; // Assurez-vous de mettre le bon chemin
+
+const profilStore = useProfilStore();
 
 const formData = ref({
   email: "",
@@ -39,7 +42,10 @@ const formData = ref({
 
 const submitForm = () => {
   // Ajoutez ici la logique pour soumettre le formulaire, par exemple, une requête HTTP
-  console.log(formData.value);
+  console.log("je tente une connexion");
+  console.log(formData.value.email);
+  console.log(formData.value.password);
+  profilStore.test(formData.value.email, formData.value.password);
 };
 </script>
 
